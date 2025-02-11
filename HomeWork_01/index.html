@@ -15,6 +15,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
+            background-color:#419393;
         }
 
         .container {
@@ -28,12 +29,59 @@
         }
 
         pre {
-            background-color: #f4f4f4;
+            background-color: #be6c6c;
             padding: 10px;
             border-radius: 5px;
             text-align: left;
             text-wrap-mode:wrap;
+            white-space: pre-wrap;
+            word-break: break-all;
+            font-size: 16px;
         }
+
+        h1 {
+            font-size: 24px;
+            padding: 10px;
+            color:#F5E6DA;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        h1:hover {
+                color: #007bff;
+        
+              }
+
+      .card{
+        display: inline-block;
+        width: 25%;
+        padding: 20px;
+        background-color: black;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: left;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease;
+
+      }        
+      .cards:hover {
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+              }
+       .title {
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                text-decoration: none;
+                padding: 1rem;
+                transition: color 0.3s ease;
+                background-color: #ddd;
+              }
+
+              
     </style>
 </head>
 
@@ -44,7 +92,7 @@
 
     <script type="text/babel">
 
-        const Title = () => {
+        const Heading = () => {
         return (
                 <h1>
                     React Assignment Homework
@@ -54,8 +102,8 @@
 
         const Card = ({ title, children }) => {
             return (
-                <div>
-                    <h2>{title}</h2>
+                <div className="cards">
+                    <h2 className="title">{title}</h2>
                     <pre>{children}</pre>
                 </div>
             );
@@ -110,20 +158,16 @@
 
         const HtmlStucture = () =>{
             return (
-                <Card title="HTML Structure">
-                    <p>
-                        A basic HTML structure looks like this:
-                    </p>
+                <Card title="HTML - Structuring the Web">
+                    <p> HTML (HyperText Markup Language) is the backbone of any webpage. </p>
+                    <p> It provides the structure for content using elements like headings, paragraphs, lists, and images.</p>
+                    <p> React enhances HTML by enabling **component-based architecture**, where UI elements can be reused efficiently.
+                        For example, a simple React </p>
+                     <p> Component can be written as: </p>
+                        
+    
                     <pre>
-                        &lt;html&gt;
-                        <br/>
-                        &lt;head&gt;
-                        <br/>
-                        &lt;body&gt;
-                        <br/>
-                        &lt;/body&gt;
-                        <br/>
-                        &lt;/html&gt;
+                            {`const Heading = () => <h1>Welcome to React</h1>;`}
                     </pre>
                 </Card>
             );
@@ -131,14 +175,15 @@
 
         const CssWeb = () =>{
             return (
-                <Card title="CSS for Websites">
+                <Card title="CSS - Styling the Web">
                     <p>
                         CSS is used to style HTML elements. It can be used to make your website look more appealing and user-friendly.
                     </p>
                     <pre>
-                        /* Example CSS */
-                        <br/>
-                
+                        To learn more about CSS, visit the{" "}
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                            MDN CSS Guide
+                        </a>.
                     </pre>
                 </Card>
             );
@@ -148,14 +193,12 @@
         const App = () => {
             return (
             <div className="container">
-                <Title/>
+                <Heading/>
                 <TopicsCovered />
                 <GettingStarted />
                 <UsingReactWithCDN />
                 <HtmlStucture />
-                <CssWeb />
-                
-
+                <CssWeb />        
             </div>
 
             );
