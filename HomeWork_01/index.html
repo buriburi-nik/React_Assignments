@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Assignment</title>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        ul {
+            text-align: left;
+            display: inline-block;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            text-wrap-mode:wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+  
+
+
+    <script type="text/babel">
+
+        const Title = () => {
+        return (
+                <h1>
+                    React Assignment Homework
+                </h1>
+            )
+        }
+
+        const Card = ({ title, children }) => {
+            return (
+                <div>
+                    <h2>{title}</h2>
+                    <pre>{children}</pre>
+                </div>
+            );
+        };
+
+        const TopicsCovered = () => {
+                return (
+                    <Card title="Topics Covered">
+                        <ul>
+                            <li>Using React with CDN links</li>
+                            <li>Creating and rendering components</li>
+                            <li>Structuring a webpage using HTML and CSS</li>
+                            <li>Ensuring UI consistency and styling</li>
+                        </ul>
+                    </Card>
+                );
+            };
+
+        const GettingStarted = () => {
+            return (
+                <Card title="Getting Started">
+                    <ol>
+                        <li>Install Node.js</li>
+                        <li>Create a new project directory</li>
+                        <li>Initialize npm</li>
+                        <li>Install React</li>
+                        <li>Create a new React component</li>
+                        <li>Render the component in the browser</li>
+                    </ol>
+                </Card>
+            );
+        }    
+
+
+        const UsingReactWithCDN = () => {
+            return (
+                <Card title="Using React with CDN links">
+                    <p>
+                        Add the following script tags to your HTML file:
+                    </p>
+                    <pre>
+                        &lt;script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin&gt;&lt;/script&gt;
+                        <br/>
+                        &lt;script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin&gt;&lt;/script&gt;
+                    </pre>
+                </Card>
+            );
+        }
+
+
+
+
+        const HtmlStucture = () =>{
+            return (
+                <Card title="HTML Structure">
+                    <p>
+                        A basic HTML structure looks like this:
+                    </p>
+                    <pre>
+                        &lt;html&gt;
+                        <br/>
+                        &lt;head&gt;
+                        <br/>
+                        &lt;body&gt;
+                        <br/>
+                        &lt;/body&gt;
+                        <br/>
+                        &lt;/html&gt;
+                    </pre>
+                </Card>
+            );
+        }
+
+        const CssWeb = () =>{
+            return (
+                <Card title="CSS for Websites">
+                    <p>
+                        CSS is used to style HTML elements. It can be used to make your website look more appealing and user-friendly.
+                    </p>
+                    <pre>
+                        /* Example CSS */
+                        <br/>
+                
+                    </pre>
+                </Card>
+            );
+        }
+
+
+        const App = () => {
+            return (
+            <div className="container">
+                <Title/>
+                <TopicsCovered />
+                <GettingStarted />
+                <UsingReactWithCDN />
+                <HtmlStucture />
+                <CssWeb />
+                
+
+            </div>
+
+            );
+        };
+
+        const rootElement = ReactDOM.createRoot(document.getElementById('root'));
+        rootElement.render(<App />);
+    </script>
+</body>
+
+</html>
