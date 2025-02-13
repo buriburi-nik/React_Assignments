@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Assignment</title>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+       body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background-color: #94688e;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       }
+       .cards {
+            background-color: #ffffff;
+            padding: 1rem;
+            margin: 10px;
+            border-radius: 10px;
+            width: 800px;
+       }
+       h1 {
+            color: rgb(255, 238, 0);
+            font-size: 34px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 2px ridge #f4f7fa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+       }
+       h2 {
+            color: rgb(0, 191, 255);
+            font-size: 18px;
+       }
+       pre {
+            background-color: #8bbe6c;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            text-wrap-mode: wrap;
+            white-space: pre-wrap;
+            word-break: break-all;
+            font-size: 16px;
+       }
+       ul {
+            text-align: left;
+            display: inline-block;
+       }
+
+       .sub{
+        border: 5px inset #3e93e9;
+        border-radius: 15px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+       }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+  
+
+
+    <script type="text/babel">
+
+        const Heading = () => {
+        return (
+                <h1>
+                    React Assignment Homework
+                </h1>
+            )
+        }
+
+        const Card = ({ title, children }) => {
+            return (
+                <div className="cards">
+                    <h2 className="title">{title}</h2>
+                    <pre>{children}</pre>
+                </div>
+            );
+        };
+
+        const TopicsCovered = () => {
+                return (
+                    <Card title="Topics Covered">
+                        <ul>
+                            <li>Using React with CDN links</li>
+                            <li>Creating and rendering components</li>
+                            <li>Structuring a webpage using HTML and CSS</li>
+                            <li>Ensuring UI consistency and styling</li>
+                        </ul>
+                    </Card>
+                );
+            };
+
+        const GettingStarted = () => {
+            return (
+                <Card title="Getting Started">
+                    <ol>
+                        <li>Install Node.js</li>
+                        <li>Create a new project directory</li>
+                        <li>Initialize npm</li>
+                        <li>Install React</li>
+                        <li>Create a new React component</li>
+                        <li>Render the component in the browser</li>
+                    </ol>
+                </Card>
+            );
+        }    
+
+
+        const UsingReactWithCDN = () => {
+            return (
+                <Card title="Using React with CDN links">
+                    <p>
+                        Add the following script tags to your HTML file:
+                    </p>
+                    <pre>
+                        &lt;script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin&gt;&lt;/script&gt;
+                        <br/>
+                        &lt;script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin&gt;&lt;/script&gt;
+                    </pre>
+                </Card>
+            );
+        }
+
+
+
+
+        const HtmlStucture = () =>{
+            return (
+                <Card title="HTML - Structuring the Web">
+                    <p> HTML (HyperText Markup Language) is the backbone of any webpage. </p>
+                    <p> It provides the structure for content using elements like headings, paragraphs, lists, and images.</p>
+                    <p> React enhances HTML by enabling **component-based architecture**, where UI elements can be reused efficiently.
+                        For example, a simple React </p>
+                     <p> Component can be written as: </p>
+                        
+    
+                    <pre>
+                            {
+                            `const Heading = () => <h1>Welcome to React</h1>;\n<div className="cards">\n<h2 className="title">{title}</h2>\n<pre>{children}</pre>\n</div>`
+                            }
+                    </pre>
+                </Card>
+            );
+        }
+
+        const CssWeb = () =>{
+            return (
+                <Card title="CSS - Styling the Web">
+                    <p>
+                        CSS is used to style HTML elements. It can be used to make your website look more appealing and user-friendly.
+                    </p>
+                    <pre>
+                        To learn more about CSS, visit the{" "}
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                            MDN CSS Guide
+                        </a>.
+                    </pre>
+                </Card>
+            );
+        }
+
+
+        const App = () => {
+            return (
+            <div className="container">
+                <Heading/>
+                <div className="sub">
+                <TopicsCovered />
+                <GettingStarted />
+                <UsingReactWithCDN />
+                <HtmlStucture />
+                <CssWeb />  
+                </div>
+            </div>
+            );
+        };
+
+        const rootElement = ReactDOM.createRoot(document.getElementById('root'));
+        rootElement.render(<App />);
+    </script>
+</body>
+
+</html>

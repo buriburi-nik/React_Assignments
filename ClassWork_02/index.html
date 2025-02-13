@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .title {
+            color: red;
+            font-size: 24px;
+            background-color: #f0cc4b;
+            padding: 1rem;
+            margin: 10px;
+            border-radius: 10px;
+            width: 500px;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 10px;width: 300px;
+        }
+       .div1 {
+        background-color: #0f5b44;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 500px;
+            color: white;
+       }
+       .Container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f1f1;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 600px) {
+           .Container {
+                flex-direction: column;
+            }
+        }
+        
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script>
+        const H1Tags = React.createElement("h1", { className: "title" }, "We are In H1Tags");
+        const firstDiv = React.createElement("div", {className:"div1"}, React.createElement("p", null, `We Are In 1st Div with" P Tag"`));
+        const secondDiv = React.createElement("div", {className:"div1"}, [
+            React.createElement("p", null, "We are In 2nd Div with P and Anchor Tags"),
+            React.createElement("a", { href: "https://react.dev/" }, "This link will redirect to react website")
+        ]);
+        const lastDiv = React.createElement("div", {className:"div1"}, React.createElement("p", null, "welcome to React"));
+
+        const container = React.createElement("div", {className:"Container"}, [H1Tags, firstDiv, secondDiv, lastDiv]);
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(container);
+    </script>
+</body>
+
+</html>
