@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
           <div className="nav-logo">
-        <img src="/public/Food_Network_New_Logo.png" alt="logo" />
+        <img src='/Food_Network_New_Logo.png' alt="logo" />
         
           </div>   
           <ul className="nav-links">
