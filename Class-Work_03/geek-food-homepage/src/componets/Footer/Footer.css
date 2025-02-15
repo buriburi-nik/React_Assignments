@@ -1,0 +1,59 @@
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.wave-logo {
+    font-size: 1.5rem;
+}
+
+.footer-description {
+    max-width: 500px;
+    margin: 1rem auto;
+    color: #555;
+    line-height: 1.5;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.footer-nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: #f7c08a;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.footer-social svg {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.footer-social svg:hover {
+    color: #f7c08a;
+}

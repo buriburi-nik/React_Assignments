@@ -1,0 +1,34 @@
+.Cards-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.disp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.author h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.author span {
+    font-size: 0.85rem;
+    color: #777;
+}
