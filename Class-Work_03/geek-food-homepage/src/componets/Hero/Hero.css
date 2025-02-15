@@ -68,3 +68,27 @@
     background-color: #f7c08a;
     color: #111;
 }
+
+@media (max-width: 768px) {
+    .hero{
+        background-image: url(/src/assets/food2.jpeg);
+
+    }
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 0;
+        background-size: contain;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

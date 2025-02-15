@@ -13,9 +13,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.nav-logo img{
+.nav-logo img {
     width: 2.5rem;
 }
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -46,4 +47,14 @@
 
 .nav-btn:hover {
     background-color: #edaa67;
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+   
+
+    .nav-links {
+        display: none;
+    }
+
 }
