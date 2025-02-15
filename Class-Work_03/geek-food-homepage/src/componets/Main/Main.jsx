@@ -3,7 +3,7 @@ export default function Main() {
   return (
       <section className="info-section">
           <div className="info-image">
-              <img src="./main.png" alt="main-image" />
+              <img src="/public/main.png" alt="main-image" />
           </div>
           <div className="info-text">
               <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, debitis.</h2>

@@ -1,4 +1,5 @@
 import "./Card.css";
+// import profile from '/assets/profile.png'
 export default function Cards() {
   const Data = [
     {
@@ -6,14 +7,14 @@ export default function Cards() {
       name: "Gladis Lemon",
       title: "Head of SEO",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima dicta amet.",
-      image:"/src/assets/profile.png"
+      image:'/public/profile.png'
     },
     {
       id: 2,
       name: "Nikhi la",
       title: "Head of SEO",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit beatae incidunt.",
-            image:"/src/assets/profile.png"
+      image:'/public/profile.png'
 
     },
     {
@@ -21,21 +22,21 @@ export default function Cards() {
       name: "Gladis Lemon",
       title: "Head of SEO",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima dicta amet.",
-      image:"/src/assets/profile.png"
+      image:'/public/profile.png'
     },
     {
       id: 4,
       name: "Nikhi la",
       title: "Head of SEO",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit beatae incidunt.",
-      image:"/src/assets/profile.png"
+      image:'/public/profile.png'
     },
     {
       id: 5,
       name: "Gladis Lemon",
       title: "Head of SEO",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima dicta amet.",
-      image:"/src/assets/profile.png"
+      image:'/public/profile.png'
     }
   ];
 
