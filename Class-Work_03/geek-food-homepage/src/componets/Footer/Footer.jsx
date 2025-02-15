@@ -4,7 +4,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-logo">
       
-  <img src="/public/download.svg" alt="Footer Logo" />
+  <img src="/download.svg" alt="Footer Logo" />
 
       </div>
       <p className="footer-description">
