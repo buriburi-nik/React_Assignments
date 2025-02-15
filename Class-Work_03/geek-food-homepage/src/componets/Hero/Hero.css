@@ -71,7 +71,7 @@
 
 @media (max-width: 768px) {
     .hero{
-        background-image: url(/src/assets/food2.jpeg);
+        background-image: url(../../assets/food2.jpeg);
         min-height: 70vh;
 
     }
