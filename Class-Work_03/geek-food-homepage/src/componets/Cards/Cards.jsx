@@ -6,35 +6,36 @@ export default function Cards() {
       name: "Gladis Lemon",
       title: "Head of SEO",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima dicta amet.",
-      image: "../../assets/profile.png"
+      image:"/src/assets/profile.png"
     },
     {
       id: 2,
       name: "Nikhi la",
       title: "Head of SEO",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit beatae incidunt.",
-      image: "../../assets/profile.png"
+            image:"/src/assets/profile.png"
+
     },
     {
       id: 3,
       name: "Gladis Lemon",
       title: "Head of SEO",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima dicta amet.",
-      image: "../../assets/profile.png"
+      image:"/src/assets/profile.png"
     },
     {
       id: 4,
       name: "Nikhi la",
       title: "Head of SEO",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit beatae incidunt.",
-      image: "../../assets/profile.png"
+      image:"/src/assets/profile.png"
     },
     {
       id: 5,
       name: "Gladis Lemon",
       title: "Head of SEO",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima dicta amet.",
-      image: "../../assets/profile.png"
+      image:"/src/assets/profile.png"
     }
   ];
 
