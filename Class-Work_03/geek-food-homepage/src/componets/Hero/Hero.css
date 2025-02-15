@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    min-height: 80vh;
+    min-height: 95vh;
     background: url("/src/assets/back.png") no-repeat center center/cover;
     display: flex;
     align-items: center;
@@ -72,6 +72,7 @@
 @media (max-width: 768px) {
     .hero{
         background-image: url(/src/assets/food2.jpeg);
+        min-height: 70vh;
 
     }
     .hero-content {
