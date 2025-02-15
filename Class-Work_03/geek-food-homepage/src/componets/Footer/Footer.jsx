@@ -3,8 +3,9 @@ export default function Footer() {
  return (
     <footer className="footer">
       <div className="footer-logo">
-        <span className="wave-logo">🌊</span>
-        <h3>LogoIpsum</h3>
+      
+  <img src="/src/assets/download.svg" alt="Footer Logo" />
+
       </div>
       <p className="footer-description">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consectetur

@@ -11,6 +11,15 @@
     gap: 0.5rem;
 }
 
+
+.footer-logo img {
+    filter: invert(38%) sepia(69%) saturate(395%) hue-rotate(131deg) brightness(94%) contrast(94%);
+    width: 16rem;
+}
+
+.footer-logo h2 {
+    margin: 0;
+}
 .wave-logo {
     font-size: 1.5rem;
 }
