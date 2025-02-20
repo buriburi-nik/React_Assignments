@@ -1,42 +1,104 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  html,
+  body {
+    height: 100%;
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .container {
+    max-width: 500px;
+    text-align: center;
   }
+
+h1{
+  margin-bottom: 20px;
 }
 
-.card {
-  padding: 2em;
+.input-cont{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
 }
 
-.read-the-docs {
-  color: #888;
+.input-field{
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
+.add-btn{
+  background-color: #4285f4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subject-list{
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item{
+  margin-bottom: 10px;
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.subject-name{
+  font-weight: bold;
+  color: #4285f4;
+  cursor: pointer;
+}
+
+.subject-hours{
+  font-size: 14px;
+  color: #666;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.remove-btn{
+  background-color: #fd3e31;
+  color: white;
+  display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
