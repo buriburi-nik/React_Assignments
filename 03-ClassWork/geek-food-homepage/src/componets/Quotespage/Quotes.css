@@ -1,0 +1,55 @@
+.quotes-container {
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top, #f7f7f7, #e0e0e0);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quotes-heading {
+    font-size: 3rem;
+    margin: 0 0 20px;
+    color: #0a1128;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.quotes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quote-item {
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    padding: 25px 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 55rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid #f7a072;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quote-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #05668d;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.quote-author {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #f07167;
+    font-size: 1.2rem;
+    text-align: right;
+}
