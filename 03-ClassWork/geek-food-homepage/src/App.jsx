@@ -8,6 +8,10 @@ import Restaurants from "./componets/Restaurants/Restaurant";
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+// Add your routes here
+
+// Add your components here
+
 
 function App() {
   return (
